@@ -7,6 +7,7 @@ namespace VoiceTexterBot
     {
         public static void Main()
         {
+            //Создание массива и заполнение его данными
             List<User> users = new List<User>();
             User user1 = new User();
             user1.IsPremium = false;
@@ -16,6 +17,7 @@ namespace VoiceTexterBot
             user2.IsPremium = true;
             user2.Login = "gun";
             users.Add(user2);
+            //заполнение имени каждого пользователя и выставление рекламы
             foreach (User user in users) 
             {
                 Console.WriteLine($"{user.Login}, введите ваше имя:");
